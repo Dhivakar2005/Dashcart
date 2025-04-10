@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="recommendations-header">
+  <h2>Recommended For You</h2>
+  <p class="customer-id-info">Customer: {{ customer_id }}</p>
+</div>
+
+{% if recs %}
+  <div class="product-card-grid">
+    {% for rec in recs %}
+      <div class="product-card">
+        <div class="product-card__image">
+          <img src="{{ url_for('static', filename='images/' ~ rec.product.product_id ~ '.png') }}"
+               alt="{{ rec.product.product_name }}"
+               onerror="this.src='{{ url_for('static', filename='images/placeholder.png') }}'">
+        </div>
+        <div class="product-card__info">
+          <span class="product-card__category">{{ rec.product.category }}</span>
+          <h3 class="product-card__title">{{ rec.product.product_name }}</h3>
+          <p class="product-card__price">Price: ${{ "%.2f"|format(rec.product.price) }} | Rating: {{ rec.product.rating }}</p>
+          <p class="product-card__explanation">{{ rec.explanation }}</p>
+        </div>
+        <button class="product-card__btn">Add to Cart</button>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p class="no-recs">No recommendations available for this customer.</p>
+{% endif %}
+<a href="{{ url_for('index') }}" class="back-button">Back</a>
+{% endblock %}

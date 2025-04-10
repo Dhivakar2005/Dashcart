@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero-section">
+  <div class="hero-text">
+    <h1>Welcome to Dashcart!</h1>
+    <p>Enter your Customer ID to get personalized recommendations.</p>
+    <form method="POST">
+      <input type="text" name="customer_id" placeholder="e.g., C1000 or C1020" required>
+      <button type="submit" class="hero-button">Get Recommendations</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

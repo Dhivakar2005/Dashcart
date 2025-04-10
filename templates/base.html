@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashcart</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__logo">
+      <h2>Dashcart</h2>
+    </div>
+    <nav class="navbar__links">
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="#">Categories</a>
+      <a href="#">Deals</a>
+      <a href="#">Trending</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 SmartShop. All rights reserved.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+Flask
+scikit-learn
+transformers
+langgraph
+torch
+diffusers
+accelerate
+gunicorn
