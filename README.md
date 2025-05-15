@@ -2,7 +2,7 @@
 
 This project is an intelligent shopping recommendation platform that delivers personalized product suggestions based on customer ID. It combines traditional data insights with advanced AI agents for a rich, dynamic recommendation experience.
 
----
+
 
 ## 💡 Key Features
 
@@ -15,11 +15,11 @@ This project is an intelligent shopping recommendation platform that delivers pe
 - 🗃️ SQLite-backed database (lightweight and portable)
 - 🌐 Web interface built with Flask
 
----
+
 
 ## 🧠 Architecture Overview
 
-    ```text
+    
     User Input (customer_id)
             |
             v
@@ -37,7 +37,7 @@ This project is an intelligent shopping recommendation platform that delivers pe
 
 
 
----
+
 
 ## 📁 Project Structure
 
@@ -57,7 +57,7 @@ This project is an intelligent shopping recommendation platform that delivers pe
     ├── static/css/js/images/ # Generated product images
     └── requirements.txt
 
----
+
 
 ## 🌐 Web App Demo
 The Flask app (app.py) provides a UI to enter a customer_id and view recommendations with:
@@ -68,10 +68,10 @@ The Flask app (app.py) provides a UI to enter a customer_id and view recommendat
 
 - AI-generated product image
 
----
+
 
 ## 📂 Dataset Overview
-🧍‍♂ Customer Data Collection Columns
+### 🧍‍♂ Customer Data Collection Columns
 - Customer_ID
 - Age
 - Gender
@@ -83,7 +83,7 @@ The Flask app (app.py) provides a UI to enter a customer_id and view recommendat
 - Holiday
 - Season
 
-📦 Product Recommendation Data Columns
+### 📦 Product Recommendation Data Columns
 - Product_ID
 - Category
 - Subcategory
@@ -102,17 +102,17 @@ The Flask app (app.py) provides a UI to enter a customer_id and view recommendat
 
 ### 1. Clone the Repository
 
-    ```bash
+    
     git clone https://github.com/Dhivakar2005/Dashcart.git
     cd Dashcart
 
 ### 2. Create and Activate Virtual Environment
-    ```bash
+    
     python -m venv venv
     source venv/bin/activate
 
 ### 3. Install Dependencies
-    ```bash
+    
     pip install -r requirements.txt
 
 ### 4.Run Files(One-by-One)
@@ -120,6 +120,8 @@ The Flask app (app.py) provides a UI to enter a customer_id and view recommendat
     - run_flow.py
     - app.py
 
+## 🫱🏻‍🫲🏻 Contributions
+We welcome contributions to the DashCart AI-Powered Shopping Recommendation System! Whether you’re fixing a bug, adding features, or improving documentation, your input helps make this project better.
 
 ## 📄 License
 This project is licensed under the MIT License.
